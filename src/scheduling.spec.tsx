@@ -39,10 +39,10 @@ describe('Testing scheduling application', () => {
       test('should be respected order of array execution', () => {
         const arrayDefinido = definindoPrioridade(jobMock);
     
-        console.log(arrayDefinido);
-      expect(arrayDefinido[0].ID).toEqual(1);
-      expect(arrayDefinido[1].ID).toEqual(3);
-      expect(arrayDefinido[2].ID).toEqual(2);
+        
+          expect(arrayDefinido[0].ID).toEqual(1);
+          expect(arrayDefinido[1].ID).toEqual(3);
+          expect(arrayDefinido[2].ID).toEqual(2);
      
      
 

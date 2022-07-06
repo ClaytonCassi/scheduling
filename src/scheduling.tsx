@@ -78,17 +78,15 @@ export function dataRealExecucao(job: Array<IJobs>): Array<IJobs>{
        dataAtualizada.setHours(dataAtualizada.getHours() - item.Estimatetime);
 
        item.MaxDate = dataAtualizada.toString();
-      
-     
-        
+
       return item;
-     
-   
-   
+      
   });
 
   return dataRealExecucao;
 }
+
+
 export function dentroRange(job: Array<IJobs>): Array<IJobs> {
   const dateStart = new Date('2019-11-10 09:00:00');
   const dateEnd = new Date('2019-11-11 12:00:00');
